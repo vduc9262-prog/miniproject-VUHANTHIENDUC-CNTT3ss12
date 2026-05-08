@@ -150,7 +150,11 @@ END //
 DELIMITER ;	
 
 
-
+CALL sp_AddUser('thienduc', '123456', 'thienduc@gmail.com');
+SET @new_post_id = 0;
+CALL sp_CreatePost(1,'Bài viết mới',@new_post_id);
+SELECT @new_post_id;
+CALL sp_GetFriends(1, 10, 0);
 
 
 
