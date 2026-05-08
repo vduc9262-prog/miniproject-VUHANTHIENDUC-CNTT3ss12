@@ -159,7 +159,7 @@ CALL sp_GetFriends(1, 10, 0);
 
 -- Tạo Index cho truy vấn lấy bài đăng mới nhất theo thời gian
 CREATE INDEX idx_post_created_at 
-ON Posts(created_at DESC);
+ON Posts(created_at);
 
 
 
